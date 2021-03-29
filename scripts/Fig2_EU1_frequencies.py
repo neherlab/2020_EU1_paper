@@ -77,40 +77,11 @@ if __name__=="__main__":
     #fig, (ax1, ax2, ax3) = plt.subplots(nrows=3, sharex=True,figsize=(10,7),
     #                                    gridspec_kw={'height_ratios':[1,1,3]})
     # Change to just show Travel to spain only. see above for old 3 panel version
-    fig, (ax1, ax3) = plt.subplots(nrows=2, sharex=True,figsize=(10,6),
-                                        gridspec_kw={'height_ratios':[1, 3]})
-    ax1.grid(True, axis='x', which='major')
+    fig, ax3 = plt.subplots(nrows=1, sharex=True,figsize=(10,4.6))
     ax3.grid(True, axis='x', which='major')
-    ax1.set_axisbelow(True)
     ax3.set_axisbelow(True)
     i=0
-    #for coun in [x for x in countries_to_plot]:
-    for coun in travel_order:
-        if coun in q_free_to_spain:
-            q_times = q_free_to_spain[coun]
-            strt = datetime.datetime.strptime(q_times["start"], "%Y-%m-%d")
-            end = datetime.datetime.strptime(q_times["end"], "%Y-%m-%d")
-            y_start = i*0.022
-            height = 0.02
-            ax1.add_patch(Rectangle((strt,y_start), end-strt, height,
-                        ec=country_styles[coun]['c'], fc=country_styles[coun]['c']))
-            #ax1.text(strt, y_start+0.002, q_times["msg"], fontsize=fs*0.8)
-            ax1.text(strt, y_start+0.003, q_times["msg"], fontsize=fs*0.8)
-            if coun == "Denmark":
-                strt = datetime.datetime.strptime(q_free_to_spain["Denmark2"]["start"], "%Y-%m-%d")
-                end = datetime.datetime.strptime(q_free_to_spain["Denmark2"]["end"], "%Y-%m-%d")
-                ax1.add_patch(Rectangle((strt,y_start), end-strt, height,
-                        ec=country_styles[coun]['c'], fc="none", hatch="/"))
-                ax1.text(strt, y_start+0.003, q_free_to_spain["Denmark2"]["msg"], fontsize=fs*0.8)
-        i=i+1
-    ax1.set_ylim([0,y_start+height])
-    ax1.text(datetime.datetime.strptime("2020-05-03", "%Y-%m-%d"), y_start,
-            "Quarantine-free", fontsize=fs)
-    ax1.text(datetime.datetime.strptime("2020-05-03", "%Y-%m-%d"), y_start-height-0.005,
-            "Travel to/from Spain", fontsize=fs)
-    ax1.text(datetime.datetime.strptime("2020-05-03", "%Y-%m-%d"), y_start-height-height-0.01,
-            "(on return)", fontsize=fs)
-    ax1.get_yaxis().set_visible(False)
+
 
     #for a simpler plot of most interesting countries use this:
     for coun in [x for x in countries_to_plot]:
