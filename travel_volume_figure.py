@@ -396,7 +396,7 @@ def total_EU1_cases(roamers, country_to_iso, spain_frequency, cases_by_cw_per_ca
                                        np.array([(pc+total_not_spain[dates[i-1]]) for i in range(t0,len(dates))])
 
         plot_ratio(dates[t0:], Re_eu1[0], Re_eu1[1], pc**0.5*Re_eu1[0]**0.5, pc**0.5*Re_eu1[1]**0.5, ax, label='Growth EU1 (uncorrected)')
-        plot_ratio(dates[1:], Re_non_eu1[0], Re_non_eu1[1], pc**0.5*Re_non_eu1[0]**0.5, pc**0.5*Re_non_eu1[1]**0.5, ax, label='Growth non EU1')
+        non_EU1_Re = plot_ratio(dates[1:], Re_non_eu1[0], Re_non_eu1[1], pc**0.5*Re_non_eu1[0]**0.5, pc**0.5*Re_non_eu1[1]**0.5, ax, label='Growth non EU1')
         for delay in Re_eu1_subtracted:
             plot_ratio(dates[t0:], Re_eu1_subtracted[delay][0], Re_eu1_subtracted[delay][1], pc**0.5*Re_eu1_subtracted[delay][0]**0.5, pc**0.5*Re_eu1_subtracted[delay][1]**0.5, ax, label=f'Growth EU1 -- travel {delay}d')
 
@@ -405,13 +405,28 @@ def total_EU1_cases(roamers, country_to_iso, spain_frequency, cases_by_cw_per_ca
         ax.set_title(f"exports multiplied by {mult}")
     fig.autofmt_xdate(rotation=30)
     plt.legend()
+    return non_EU1_Re
 
 def plot_ratio(x, num, denom, dnum, ddenom, ax, nstd = 2, label=''):
     center = num/denom
     dlog_center = (dnum**2/num**2 + ddenom**2/denom**2)**0.5
+    upper = center*np.exp(nstd*dlog_center)
+    lower = center*np.exp(-nstd*dlog_center)
     ax.plot(x, center, label=label)
-    ax.fill_between(x, center*np.exp(nstd*dlog_center), center*np.exp(-nstd*dlog_center), alpha=0.3)
+    ax.fill_between(x, lower, upper, alpha=0.3)
+    return {'date':x, 'center': center, 'lower':lower, 'upper':upper}
 
+def exportRe(d, fname, genTime=7):
+    def convertRe(x, genTime):
+        return np.exp(np.log(x)/7*genTime)
+
+    with open(fname, 'w') as fh:
+        fh.write('\t'.join(['date', 'lower', 'center', 'upper'])+'\n')
+        for date, l, c, u in zip(d['date'], d['lower'], d['center'], d['upper']):
+            if np.isnan(c):
+                continue
+
+            fh.write(f'\t{date.strftime("%Y-%m-%d")}\t{convertRe(l, genTime)}\t{convertRe(c, genTime)}\t{convertRe(u, genTime)}\n')
 
 
 if __name__ == '__main__':
@@ -475,4 +490,6 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figure_path + f"country_clustering.{fmt}")
 
-    total_EU1_cases(roamers, country_to_iso, spain_frequency, cases_by_cw_per_capita)
+    non_EU1_Re = total_EU1_cases(roamers, country_to_iso, spain_frequency, cases_by_cw_per_capita)
+    exportRe(non_EU1_Re, "2021-02-10_nonEU1-Re07d.tsv", genTime=7)
+    exportRe(non_EU1_Re, "2021-02-10_nonEU1-Re10d.tsv", genTime=10)
