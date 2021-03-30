@@ -32,4 +32,9 @@ The full list of accession numbers is provided in [acknowledgement_tables/acknow
 
 The data aggregated by calendar week and country are available in XXX and serve as alternative entry point for the script [scripts/Fig2_EU1_frequencies.py](scripts/Fig2_EU1_frequencies.py).
 
+### Figure 3
+
+The script [`scripts/travel_volume_figure.py`](scripts/travel_volume_figure.py) generates the the travel related figure in the main text as well as several Extended Data figure concerned with travel, imports, and roaming data.
+The mobile phone roaming data was provided by [Kido Dynamics](https://www.kidodynamics.com/) and is available in [travel_data/roaming_data](travel_data/roaming_data).
+
 ### Extended data
