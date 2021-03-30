@@ -327,7 +327,7 @@ def make_pie_tree(cluster, node_counts, fname):
     plt.axis('off')
     plt.legend(handles=ptchs, loc=3, fontsize=fs)
     plt.tight_layout()
-    plt.savefig(tree_path)
+    plt.savefig(fname)
     return node_countries
 
 def plot_introduction_statistics(node_countries, suffix):
@@ -366,7 +366,7 @@ if __name__=="__main__":
 
     metadatafile = "gisaid_data/metadata_2021-01-20.tsv"
     figure_path = "./figures/"
-    untilNov=False
+    untilNov=True
 
     #For November 30 data
     if untilNov:
