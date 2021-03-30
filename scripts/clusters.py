@@ -1,7 +1,7 @@
 
 
 clusters = {"S222": {'snps': [22226, 28931, 29644], 'cluster_data': [],
-            "country_info":[], 'col': "#ff8d3d", "display_name": "20A.EU1", "build_name":"20A.EU1"},
+            "country_info":[], 'col': "#ff8d3d", "display_name": "20E (EU1)", "build_name":"20A.EU1"},
             "S477": {'snps': [22991, 4542], 'cluster_data': [],
             'country_info':[], 'col': "#65beeb", "display_name": "20A.EU2", "build_name":"20A.EU2"},
             "S98": {'snps': [21854, 25504], 'cluster_data': [],
@@ -10,10 +10,10 @@ clusters = {"S222": {'snps': [22226, 28931, 29644], 'cluster_data': [],
             "country_info":[], 'col': "#3cb44b", "display_name": "S:D80Y", "build_name":"S.D80Y"},
             "S439": {'snps': [7766, 22878], 'cluster_data': [],
             "country_info":[], 'col': "#fb9a99", "display_name": "S:N439K", "build_name":"S.N439K"},
+            "S453": {'snps': [22919], 'cluster_data': [],
+            "country_info":[], 'col': "#cc0000", "display_name": "S:Y453F", "build_name":"S.Y453F"},
 
             # not used in paper
-            # "S453": {'snps': [22919], 'cluster_data': [],
-            # "country_info":[], 'col': "#cc0000", "display_name": "S:Y453F", "build_name":"S.Y453F"},
             # "S501": {'snps': [23063], 'cluster_data': [], 'snps2': [23062],
             # "country_info":[], 'col': "#ff99ff", "display_name": "S:N501", "build_name":"S.N501"}
 

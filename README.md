@@ -32,7 +32,7 @@ Figure 2 summarizes the frequency dynamics of the EU1 cluster in different count
 These include data available on GISAID until 2021-01-20.
 The full list of accession numbers is provided in [acknowledgement_tables/acknowledgement_tables.tsv](acknowledgement_tables/acknowledgement_tables.tsv).
 
-The data aggregated by calendar week and country are available in XXX and serve as alternative entry point for the script [scripts/Fig2_EU1_frequencies.py](scripts/Fig2_EU1_frequencies.py).
+The data aggregated by calendar week and country described above used by the script [scripts/Fig2_EU1_frequencies.py](scripts/Fig2_EU1_frequencies.py).
 
 ### Figure 3
 
