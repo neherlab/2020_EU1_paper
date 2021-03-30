@@ -4,10 +4,15 @@ import datetime
 from collections import defaultdict
 from paths import *
 
+def get_smoothing(width=1):
+    smoothing = np.exp(-np.arange(-10,11)**2/2/width**2)
+    smoothing /= smoothing.sum()
+    return smoothing
+
 def load_cluster(clus):
     cluster_data = pd.read_csv(f"cluster_tables/{clus}_counts.tsv", sep='\t', index_col=0)
     total_data = pd.read_csv(f"cluster_tables/total_counts.tsv", sep='\t', index_col=0)
-    summary = pd.read_csv(f"cluster_tables/{clus}_summary.tsv", sep='\t')
+    summary = pd.read_csv(f"cluster_tables/{clus}_summary.tsv", sep='\t', index_col=0)
     return cluster_data, total_data, summary
 
 def CW_to_date(cw):

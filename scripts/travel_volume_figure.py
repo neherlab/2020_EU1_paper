@@ -429,9 +429,7 @@ def exportRe(d, fname, genTime=7):
 if __name__ == '__main__':
     cluster_data, total_data, summary = load_cluster('S222')
 
-    width = 1
-    smoothing = np.exp(-np.arange(-10,11)**2/2/width**2)
-    smoothing /= smoothing.sum()
+    smoothing = get_smoothing(width=1)
     spain_frequency = {k: c/tot for k, c, tot in zip(*non_zero_counts(cluster_data, total_data, "Spain", smoothing=smoothing))}
     spain_frequency_by_week = {k.isocalendar()[1]: v for k, v in spain_frequency.items()}
 

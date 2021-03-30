@@ -10,7 +10,7 @@ from collections import defaultdict
 from matplotlib.patches import Rectangle
 from colors_and_countries import country_list, uk_countries, all_countries
 from travel_data import *
-from helpers import load_cluster, non_zero_counts, trim_last_data_point
+from helpers import load_cluster, non_zero_counts, trim_last_data_point, get_smoothing
 from paths import *
 from clusters import clusters as cluster_definitions
 
@@ -35,9 +35,7 @@ if __name__=="__main__":
     # Convert into dataframe
     cluster_data, total_data, country_info = load_cluster(clus)
 
-    width = 1
-    smoothing = np.exp(-np.arange(-10,11)**2/2/width**2)
-    smoothing /= smoothing.sum()
+    smoothing = get_smoothing(width=1)
 
     cutoff_num_seqs = 200
     hasMinNumber = []

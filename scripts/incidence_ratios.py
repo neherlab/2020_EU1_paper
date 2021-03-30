@@ -27,7 +27,7 @@ if __name__ == '__main__':
     plt.legend(ncol=3)
     plt.tick_params(labelsize=fs)
     fig.autofmt_xdate(rotation=30)
-    plt.savefig(f'../cluster_scripts/figures/incidence.{fmt}')
+    plt.savefig(f'./incidence.{fmt}')
 
     fig, axs = plt.subplots(1,4, sharey=True, figsize=(12,3))
 
@@ -47,7 +47,7 @@ if __name__ == '__main__':
     axs[0].set_yticks(range(len(countries)))
     axs[0].set_yticklabels(countries, rotation=0)
     plt.tight_layout()
-    plt.savefig('../cluster_scripts/figures/incidence_ratios.png')
+    plt.savefig('./figures/incidence_ratios.png')
 
     cbar = plt.figure(figsize=(12,1))
     cbar_ax = plt.subplot(111)
@@ -55,4 +55,4 @@ if __name__ == '__main__':
     plt.colorbar(img, cax=cbar_ax, orientation="horizontal", ticks=ticks)
     plt.xticks(ticks, [f"{x:1.2f}" for x in 10**np.array(ticks)])
     plt.tight_layout()
-    plt.savefig('../cluster_scripts/figures/incidence_ratio_colorbar.png')
+    plt.savefig('./figures/incidence_ratio_colorbar.png')
