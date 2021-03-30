@@ -148,6 +148,9 @@ def get_roaming_scale_factor(roamers, travel_volume, country):
 
 
 def import_figure(countries, roamers, country_to_iso, spain_frequency, cases_by_cw_per_capita):
+    '''
+    plot travel volume and expected import dynamics from roaming data and incidence in spain
+    '''
     fig, axs = plt.subplots(2,1, figsize=(6,7), sharex=True)
     summer = range(28,38)
     for country in countries:
@@ -192,11 +195,11 @@ def import_figure(countries, roamers, country_to_iso, spain_frequency, cases_by_
     axs[0].text(axs[0].get_xlim()[0]-30, axs[0].get_ylim()[1], "A", size=22, weight="bold")
     axs[1].text(axs[1].get_xlim()[0]-30, axs[1].get_ylim()[1]+0.001, "B", size=22, weight="bold")
     axs[1].set_xlim(datetime(2020,4,1),datetime(2020,11,30))
-    plt.savefig(figure_path+f'import_model.{fmt}')
+    plt.savefig(figure_path+f'Fig3_import_model.{fmt}')
 
 
 def import_scaled(countries, roamers, country_to_iso, spain_frequency, cases_by_cw_per_capita, cluster_data, total_data):
-    imports_file = open("imports.txt", 'w')
+    imports_file = open("country_case_data/estimated_imports.txt", 'w')
     imports_file.write(f"country\tintroductions\tscale_factor\n")
     case_data = load_case_data(countries + uk_countries)
 
@@ -246,7 +249,7 @@ def import_scaled(countries, roamers, country_to_iso, spain_frequency, cases_by_
             ax.set_ylabel('frequency', fontsize=fs)
     fig.autofmt_xdate(rotation=30)
     plt.tight_layout()
-    plt.savefig(figure_path+f'travel_scaled.{fmt}')
+    plt.savefig(figure_path+f'ED_travel_scaled.{fmt}')
     imports_file.close()
 
 
@@ -424,8 +427,6 @@ def exportRe(d, fname, genTime=7):
 
 
 if __name__ == '__main__':
-    date = "2021-02-07"
-    cluster_path = './through_Nov_data/'
     cluster_data, total_data, summary = load_cluster('S222')
 
     width = 1
@@ -453,10 +454,13 @@ if __name__ == '__main__':
                  "Ireland", "United Kingdom", "Denmark", "Sweden"
                  ]
 
+    ## Generate travel figure in the main text
     import_figure(countries, roamers, country_to_iso, spain_frequency, cases_by_cw_per_capita)
 
+    ## compare import model with observed frequency trajectory of EU1 in different countries -- Extended data
     import_scaled(countries, roamers, country_to_iso, spain_frequency, cases_by_cw_per_capita, cluster_data, total_data)
 
+    ## compare estimated number of imported cases with reported cases in Germany -- Extended data
     confirmed_vs_estimated_imports("Germany", roamers, country_to_iso, spain_frequency, cases_by_cw_per_capita, 3.7)
     plt.fill_between([datetime(2020,6,22),datetime(2020,9,12)], [300,300], alpha=0.3)
     plt.text(datetime(2020,9,2), -10, "Quarantine requirement")
@@ -464,6 +468,7 @@ if __name__ == '__main__':
     plt.fill_between([datetime(2020,9,2),datetime(2020,12,31)], [60,60], alpha=0.3)
     plt.savefig(figure_path+f'confirmed_vs_estimated_DE.{fmt}')
 
+    ## compare estimated number of imported cases with reported cases in Switzerland -- Extended data
     confirmed_vs_estimated_imports("Switzerland", roamers, country_to_iso, spain_frequency, cases_by_cw_per_capita, 3.8, scale_factor_reported=1/0.62)
     plt.fill_between([datetime(2020,6,20),datetime(2020,8,26)], [70,70], alpha=0.3)
     plt.fill_between([datetime(2020,8,10),datetime(2020,12,31)], [20,20], alpha=0.3)
@@ -471,8 +476,10 @@ if __name__ == '__main__':
     plt.text(datetime(2020,6,22), 20, "main holiday period", rotation=90)
     plt.savefig(figure_path+f'confirmed_vs_estimated_CH.{fmt}')
 
+    ## plot incidence and distination of visitors across spain
     case_and_travel_figure(countries, roamers, cases_by_cw, provinces, country_to_iso, province_codes)
 
+    ## plot the similarity of travel destination of visitors from different countries -- Extended data
     weeks = range(28,36)
     country_distribution = country_correlation(roamers, countries, country_to_iso, weeks, province_codes)
     fig = sns.clustermap(country_distribution.corr(), cmap='viridis')
@@ -481,6 +488,7 @@ if __name__ == '__main__':
     plt.tight_layout()
     plt.savefig(figure_path + f"country_clustering.{fmt}")
 
+    ## plot the estimated cases of EU1 and other variants in Spain and the rest of Europe over time
     non_EU1_Re = total_EU1_cases(roamers, country_to_iso, spain_frequency, cases_by_cw_per_capita)
-    exportRe(non_EU1_Re, "2021-02-10_nonEU1-Re07d.tsv", genTime=7)
-    exportRe(non_EU1_Re, "2021-02-10_nonEU1-Re10d.tsv", genTime=10)
+    exportRe(non_EU1_Re, "country_case_data/2021-02-10_nonEU1-Re07d.tsv", genTime=7)
+    exportRe(non_EU1_Re, "country_case_data/2021-02-10_nonEU1-Re10d.tsv", genTime=10)
