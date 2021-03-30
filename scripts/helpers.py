@@ -4,6 +4,18 @@ import datetime
 from collections import defaultdict
 from paths import *
 
+def load_cluster(clus):
+    cluster_data = pd.read_csv(f"cluster_tables/{clus}_counts.tsv", sep='\t', index_col=0)
+    total_data = pd.read_csv(f"cluster_tables/total_counts.tsv", sep='\t', index_col=0)
+    summary = pd.read_csv(f"cluster_tables/{clus}_summary.tsv", sep='\t')
+    return cluster_data, total_data, summary
+
+def CW_to_date(cw):
+    return datetime.strptime(f"2020-W{cw}-1", '%G-W%V-%u')
+
+def date_to_CW(d):
+    return d.isocalendar()[1]
+
 
 def logistic(x, a, t50):
     return np.exp((x-t50)*a)/(1+np.exp((x-t50)*a))
