@@ -155,7 +155,7 @@ if __name__=="__main__":
                     acknowledgement_table.append([row.strain, row.gisaid_epi_isl, row.originating_lab, row.submitting_lab, row.authors])
         total_week_counts[coun] = counts_by_week
 
-    with open(f'acknowledgment_tables/{clus}_acknowledgement_table.tsv', 'w') as fh:
+    with open(f'acknowledgement_tables/acknowledgement_table.tsv', 'w') as fh:
         fh.write('#strain\tEPI_ISOLATE_ID\tOriginating lab\tsubmitting lab\tauthors\n')
         for d in acknowledgement_table:
             fh.write('\t'.join(d)+'\n')
