@@ -9,6 +9,7 @@ _Following its emergence in late 2019, severe acute respiratory syndrome coronav
 ## Scripts and resources
 
 This repository contains the relevant code and data to reproduce the analysis presented in the manuscript.
+The analysis can be performed in the standard nextstrain [conda environment](https://github.com/nextstrain/conda) with the additional package `geopandas`.
 
 ### Main text
 

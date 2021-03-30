@@ -10,13 +10,7 @@ from colors_and_countries import *
 from helpers import *
 from spanish_regions import *
 
-figure_path = '../cluster_scripts/figures/'
-
-def CW_to_date(cw):
-    return datetime.strptime(f"2020-W{cw}-1", '%G-W%V-%u')
-
-def date_to_CW(d):
-    return d.isocalendar()[1]
+figure_path = 'figures/'
 
 def country_correlation(roamers, countries, country_to_iso, weeks, province_codes):
     res = defaultdict(list)
@@ -304,7 +298,7 @@ def confirmed_vs_estimated_imports(country, roamers, country_to_iso, spain_frequ
 
     fig = plt.figure()
     case_data = load_case_data(countries)
-    reported_imports = pd.read_csv(f'../cluster_scripts/travel_data/{country.lower()}_imports_from_spain.tsv', sep='\t')
+    reported_imports = pd.read_csv(f'./travel_data/{country.lower()}_imports_from_spain.tsv', sep='\t')
     res = get_country_imports(roamers, case_data[country], travel_volume[country], country_to_iso[country], spain_frequency,
                               cases_by_cw_per_capita, weeks, popsizes[country])
 
@@ -432,10 +426,7 @@ def exportRe(d, fname, genTime=7):
 if __name__ == '__main__':
     date = "2021-02-07"
     cluster_path = './through_Nov_data/'
-    total_data = pd.read_csv(cluster_path+f"total_data-{date}.tsv", sep="\t", index_col=0)
-    cluster_data = pd.read_csv(cluster_path+f"20A.EU1-{date}.tsv", sep="\t", index_col=0)
-    # cluster_data = pd.read_csv('../ncov_cluster/2021-01-14_cluster_data.tsv', index_col=0)
-    # total_data =   pd.read_csv('../ncov_cluster/2021-01-14_total_data.tsv', index_col=0)
+    cluster_data, total_data, summary = load_cluster('S222')
 
     width = 1
     smoothing = np.exp(-np.arange(-10,11)**2/2/width**2)

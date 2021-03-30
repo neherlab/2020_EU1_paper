@@ -11,7 +11,7 @@ def load_cluster(clus):
     return cluster_data, total_data, summary
 
 def CW_to_date(cw):
-    return datetime.strptime(f"2020-W{cw}-1", '%G-W%V-%u')
+    return datetime.datetime.strptime(f"2020-W{cw}-1", '%G-W%V-%u')
 
 def date_to_CW(d):
     return d.isocalendar()[1]
