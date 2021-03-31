@@ -98,7 +98,9 @@ def read_province_data():
     return cases_by_cw, provinces
 
 def get_Spain_shapes(province_size):
-    spain = geopandas.read_file('../geo/SECC_CPV_E_20111101_01_R_INE.shp')
+    import lzma
+    with lzma.open('../geo/SECC_CPV_E_20111101_01_R_INE.shp.gz') as fh:
+        spain = geopandas.read_file(fh)
     provinces_geo = spain.NPRO.unique()
 
     shapes = []
