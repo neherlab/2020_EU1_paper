@@ -370,13 +370,13 @@ if __name__=="__main__":
 
     #For November 30 data
     if untilNov:
-        alignfile =  "through_Nov_data/subsampled_alignment-2020-11-30.fasta"
-        nt_muts =    "through_Nov_data/nt_muts-2020-11-30.json"
+        alignfile =  "gisaid_data/subsampled_alignment-2020-11-30.fasta"
+        nt_muts =    "through_Nov_data/dummy_node_data.json"
         treefile =   "through_Nov_data/tree-2020-11-30.nwk"
     else:
     # For Sept 30 data
-        alignfile = "through_Sep_data/subsampled_alignment-2020-09-30.fasta"
-        nt_muts =   "through_Sep_data/branch_lengths-2020-09-30.json"
+        alignfile = "gisaid_data/subsampled_alignment-2020-09-30.fasta"
+        nt_muts =   "through_Sep_data/dummy_node_data.json"
         treefile =  "through_Sep_data/tree-2020-09-30.nwk"
 
     ###############################
