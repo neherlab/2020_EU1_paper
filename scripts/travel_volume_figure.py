@@ -167,8 +167,9 @@ def import_figure(countries, roamers, country_to_iso, spain_frequency, cases_by_
                 c=country_styles[country]['c'], lw=2, ls=country_styles[country].get('ls', '-'))
 
     axs[0].set_yscale('log')
-    axs[0].set_ylabel('dept. from Spain/100k residents', fontsize=fs)
-    axs[1].tick_params(labelsize=fs*0.8)
+    axs[0].set_ylabel('Dept. from Spain/100k residents', fontsize=fs)
+    axs[1].tick_params(labelsize=fs*1)
+    axs[0].tick_params(labelsize=fs*1)
     fig.autofmt_xdate(rotation=30)
 
     # plt.savefig(figure_path+f'travel_volume.{fmt}')
@@ -188,8 +189,8 @@ def import_figure(countries, roamers, country_to_iso, spain_frequency, cases_by_
         axs[1].plot(res['dates'], res['frequency'], label=country, c=country_styles[country]['c'], ls=country_styles[country].get('ls', '-'), lw=2)
 
     axs[1].legend(fontsize=fs*0.9)
-    axs[1].tick_params(labelsize=fs*0.8)
-    axs[1].set_ylabel('predicted frequency of EU1', fontsize=fs)
+    axs[1].tick_params(labelsize=fs*1)
+    axs[1].set_ylabel('Predicted frequency of EU1', fontsize=fs)
     fig.autofmt_xdate(rotation=30)
     plt.tight_layout()
     axs[0].text(axs[0].get_xlim()[0]-30, axs[0].get_ylim()[1], "A", size=22, weight="bold")
