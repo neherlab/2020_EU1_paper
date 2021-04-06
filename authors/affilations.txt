@@ -1,0 +1,389 @@
+
+
+### MAIN ###
+Emma B. Hodcroft 1,2,3
+Moira Zuber 1
+Sarah Nadeau 4
+Timothy G. Vaughan 4
+Katharine H. D. Crawford 5,6,7
+Christian L. Althaus 3
+Martina L. Reichmuth 3
+John E. Bowen 8
+Alexandra C. Walls 8
+Davide Corti 9
+Jesse D. Bloom 5,6,10
+David Veesler 8
+David Mateo 11
+Alberto Hernando 11
+Iñaki Comas 12,13,14
+Fernando González Candelas 13,14,15
+SeqCOVID-SPAIN consortium 
+Tanja Stadler 2,4
+Richard A. Neher 1,2
+
+
+### CONSORTIUM ###
+Iñaki Comas 12,13
+Fernando González-Candelas 13,15
+Galo Adrian Goig 12
+Álvaro Chiner-Oms 12
+Irving Cancino-Muñoz 12
+Mariana Gabriela López 12
+Manuela Torres-Puente 12
+Inmaculada Gomez-Navarro 12
+Santiago Jiménez-Serrano 12
+Lidia Ruiz-Roldán 15
+María Alma Bracho 13,15
+Neris García-González 15
+Llúcia Martínez-Priego 16
+Inmaculada Galán-Vendrell 16
+Paula Ruiz-Hueso 16
+Griselda De Marco 16
+Maria Loreto Ferrús 16
+Sandra Carbó-Ramírez 16
+Giuseppe D'Auria 13,16
+Mireia Coscollá 17
+Paula Ruiz-Rodríguez 17
+Francisco Javier Roig-Sena 18
+Isabel Sanmartín 19
+Daniel Garcia-Souto 20,21,22
+Ana Pequeno-Valtierra 20
+Jose M. C. Tubio 20,21
+Jorge Rodríguez-Castro 20
+Nuria Rabella 23,24,25
+Ferrán Navarro 23,24,25
+Elisenda Miró 23,24
+Manuel Rodríguez-Iglesias 26,27,28
+Fátima Galán-Sanchez 26,27,28
+Salud Rodriguez-Pallares 26,27
+María de Toro 29
+María Bea Escudero 29
+José Manuel Azcona-Gutiérrez 30
+Miriam Blasco Alberdi 30
+Alfredo Mayor 13,31,32,33
+Alberto L. García-Basteiro 31,32,33
+Gemma Moncunill 31,33
+Carlota Dobaño 31,33
+Pau Cisteró 31,33
+Darío García-de-Viedma 34,35,36
+Laura Pérez-Lago 34,35
+Marta Herranz 34,35,36
+Jon Sicilia 34,35
+Pilar Catalán-Alonso 34,35,36
+Patricia Muñoz 34,35,36
+Cristina Muñoz-Cuevas 37,38
+Guadalupe Rodríguez-Rodríguez 37,38
+Juan Alberola-Enguidanos 39,40,41
+Jose Miguel Nogueira 39,40,41
+Juan José Camarena 39,40,41
+Antonio Rezusta 42,43,44
+Alexander Tristancho-Baró 42,43
+Ana Milagro 42
+Nieves Felisa Martínez-Cameo 42
+Yolanda Gracia-Grataloup 42
+Elisa Martró 13,45
+Antoni E. Bordoy 45
+Anna Not 45
+Adrián Antuori-Torres 45
+Rafael Benito 44,46
+Sonia Algarate 44,46
+Jessica Bueno 46
+Jose Luis del Pozo 47
+Jose Antonio Boga 48,49
+Cristián Castelló-Abietar 48,49
+Susana Rojo-Alba 48,49
+Marta Elena Alvarez-Argüelles 48,49
+Santiago Melon 48,49
+Maitane Aranzamendi-Zaldumbide 50,51
+Andrea Vergara-Gómez 52
+Jovita Fernández-Pinero 53
+Miguel J Martínez 31,54
+Jordi Vila 31,54
+Elisa Rubio 31,54
+Aida Peiró-Mestres 31,54
+Jessica Navero-Castillejos 31,54
+David Posada 55,56,57
+Diana Valverde 55,56,57
+Nuria Estévez-Gómez 55
+Iria Fernandez-Silva 55,56
+Loretta de Chiara 55,56
+Pilar Gallego-García 55
+Nair Varela 55
+Rosario Moreno 58
+Maria Dolores Tirado 58
+Ulises Gomez-Pinedo 59
+Mónica Gozalo-Margüello 60
+Maria Eliecer-Cano 60
+José Manuel Méndez-Legaza 60
+Jesus Rodríguez-Lozano 60
+María Siller 60
+Daniel Pablo-Marcos 60
+Antonio Oliver 61,62
+Jordi Reina 61
+Carla López-Causapé 61,62
+Andrés Canut-Blasco 63
+Silvia Hernáez-Crespo 63
+Maria Luz A. Cordón 63
+María-Concepción Lecároz-Agara 63
+Carmen Gómez-González 63
+Amaia Aguirre-Quiñonero 63
+José Israel López-Mirones 63
+Marina Fernández-Torres 63
+Maria Rosario Almela-Ferrer 63
+Nieves Gonzalo-Jiménez 64
+Maria Montserrat Ruiz-García 64,65
+Antonio Galiana 64,66
+Judith Sanchez-Almendro 64,66
+Gustavo Cilla 67
+Milagrosa Montes 67
+Luis Piñeiro 67
+Ane Sorarrain 67
+José María Marimón 67
+Maria Dolores Gomez-Ruiz 68
+José Luis López-Hontangas 68
+Eva M. González Barberá 68
+José María Navarro-Marí 69,70
+Irene Pedrosa-Corral 69,70
+Sara Sanbonmatsu-Gámez 69,70
+Carmen Pérez-González 71
+Francisco Chamizo-López 71
+Ana Bordes-Benítez 71
+David Navarro 41,72
+Eliseo Albert 72
+Ignacio Torres 72
+Isabel Gascón 73
+Cristina Juana Torregrosa-Hetland 73
+Eva Pastor-Boix 73
+Paloma Cascales-Ramos 73
+Begoña Fuster-Escrivá 74
+Concepción Gimeno-Cardona 41,74
+María Dolores Ocete 74
+Rafael Medina-Gonzalez 74
+Julia González-Cantó 75
+Olalla Martínez-Macias 75
+Begoña Palop-Borrás 76
+Inmaculada de Toro 76
+Maria Concepción Mediavilla-Gradolph 76
+Mercedes Pérez-Ruiz 76
+Óscar González-Recio 77
+Mónica Gutiérrez-Rivas 77
+Encarnación Simarro-Córdoba 78
+Julia Lozano-Serra 78
+Lorena Robles-Fonseca 78
+Adolfo de Salazar 79
+Laura Viñuela-González 79
+Natalia Chueca 79
+Federico García 79
+Cristina Gómez-Camarasa 79
+Ana Carvajal 80
+Raul de la Puente 80
+Vicente Martín-Sánchez 13,81
+Juan-Miguel Fregeneda-Grandes 80
+Antonio José Molina 81
+Héctor Argüello 80
+Tania Fernández-Villa 81
+Maria Amparo Farga-Martí 82
+Victoria Domínguez-Márquez 82
+José Javier Costa-Alcalde 83
+Rocío Trastoy 83
+Gema Barbeito-Castiñeiras 83
+Amparo Coira 83
+María Luisa Pérez-del-Molino 83
+Antonio Aguilera 83
+Anna M. Planas 84
+Alex Soriano 85
+Israel Fernandez-Cádenas 86
+Jordi Pérez-Tur 12
+Maria Ángeles Marcos 33,87
+Antonio Moreno-Docón 88
+Esther Viedma 89
+Jesús Mingorance 90
+Juan Carlos Galán-Montemayor 91
+Mónica Parra-Grande 92
+
+
+### AFFILIATIONS ###
+1 Biozentrum, University of Basel, Basel, Switzerland
+
+2 Swiss Institute of Bioinformatics, Basel, Switzerland
+
+3 Institute of Social and Preventive Medicine, University of Bern, Bern, Switzerland
+
+4 D-BSSE, ETHZ, Basel, Switzerland
+
+5 Division of Basic Sciences and Computational Biology Program, Fred Hutchinson Cancer Research Center, Seattle, WA 98109, USA
+
+6 Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA
+
+7 Medical Scientist Training Program, University of Washington, Seattle, WA 98195, USA
+
+8 Department of Biochemistry, University of Washington, Seattle, WA, USA
+
+9 Humabs Biomed SA, a subsidiary of Vir Biotechnology, 6500 Bellinzona, Switzerland
+
+10 Howard Hughes Medical Institute, Seattle, WA 98103, USA
+
+11 Kido Dynamics SA, Avenue de Sevelin 46, 1004 Lausanne, Switzerland
+
+12 Instituto de Biomedicina de Valencia (IBV-CSIC), Valencia, Spain
+
+13 CIBER in Epidemiology and Public Health
+
+14 SeqCOVID-Spain consortium
+
+15 Joint Research Unit "Infection and Public Health" FISABIO-University of Valencia I2SysBio, Valencia, Spain
+
+16 FISABIO, Servicio de Secuenciación, València, Spain
+
+17 Instituto de Biología Integrativa de Sistemas, I2SysBio (CSIC-Universitat de València), Valencia, Spain
+
+18 Servicio de Vigilancia y Control Epidemiológico. Dirección General de Salud Pública y Adicciones. Conselleria de Sanitat Universal i Salut Pública. Generalitat Valenciana. Valencia, Spain
+
+19 Real Jardín Botánico, Consejo Superior de Investigaciones Científicas
+
+20 Genomes and Disease, Centre for Research in Molecular Medicine and Chronic Diseases (CIMUS), Universidade de Santiago de Compostela, Santiago de Compostela, Spain
+
+21 Department of Zoology, Genetics and Physical Anthropology, Universidade de Santiago de Compostela, Santiago de Compostela, Spain
+
+22 Cancer Ageing and Somatic Mutation Programme, Wellcome Sanger Institute, Cambridge CB1 8PS, UK
+
+23 Servei de Microbiologia.Hospital de la Santa Creu i Sant Pau, Barcelona, Spain
+
+24 CREPIMC. Institut d'Investigació Biomèdica Sant Pau, Barcelona, Spain
+
+25 Departament de Genètica i Microbiologia. Universitat Autònoma de Barcelona, Cerdanyola
+
+26 Servicio de Microbiología, H.U. Puerta del Mar, Cádiz, Spain
+
+27 INIBICA, Instituto de Investigación Biomédica de Cádiz, Cádiz, Spain
+
+28 Departamento de Biomedicina, Biotecnología y Salud Pública. Facultad de Medicina, Universidad de Cádiz, Cádiz, Spain
+
+29 Plataforma de Genómica y Bioinformática, Centro de Investigación Biomédica de La Rioja (CIBIR), Logroño, Spain
+
+30 Laboratorio de Microbiología. Hospital San Pedro, Logroño, Spain
+
+31 ISGlobal, Institute for Global Health, Barcelona, Spain
+
+32 Centro de Investigação em Saúde de Manhiça (CISM), Maputo, Mozambique
+
+33 Microbiology Department, Hospital Clinic I Provincial de Barcelona
+
+34 Servicio de Microbiología Clínica y Enfermedades Infecciosas. Hospital General Universitario Gregorio Marañón, Madrid, Spain
+
+35 Instituto de Investigación Sanitaria Gregorio Marañón, Madrid, Spain
+
+36 CIBER Enfermedades Respiratorias (CIBERES)
+
+37 Servicio de Microbiología Clínica. Hospital San Pedro de Alcántara, Cáceres, Spain
+
+38 Servicio Extremeño de Salud, Spain
+
+39 Servicio de Microbiología. Hospital Dr Peset, Valencia, Spain
+
+40 Conselleria de Sanitat i Consum. Generalitat Valenciana, Spain
+
+41 Departamento Microbiología, Facultad de Medicina, Universidad de Valencia, Valencia, Spain
+
+42 Servicio de Microbiología Clínica Hospital Universitario Miguel Servet, Zaragoza, Spain
+
+43 Instituto de Investigación Sanitaria de Aragón, Centro de Investigación Biomédica de Aragón (CIBA), Zaragoza, Spain
+
+44 Facultad de Medicina, Universidad de Zaragoza, Zaragoza, Spain
+
+45 Servicio de Microbiología, Laboratori Clínic Metropolitana Nord, Hospital Universitari Germans Trias i Pujol, Badalona, Barcelona, Spain
+
+46 Hospital Clínico Universitario Lozano Blesa, Zaragoza, Spain
+
+47 Servicio de Enfermedades Infecciosas y Microbiología clínica. Clínica Universidad de Navarra,  Pamplona, Spain
+
+48 Servicio de Microbiología, Hospital Universitario Central de Asturias, Oviedo, Spain
+
+49 Grupo de Microbiología Traslacional Instituto de Investigación Sanitaria del Principado de Asturias (ISPA), Spain
+
+50 Servicio de Microbiología, Hospital Universitario Cruces, Bilbao, Spain
+
+51 Grupo de Microbiología y Control de Infección Instituto de Investigación Sanitaria Biocruces Bizkaia, Spain
+
+52 Servicio de Microbiología & CORE de Biología Molecular, CDB, Hospital Clínic, Barcelona, Spain
+
+53 Centro de Investigación en Sanidad Animal. Instituto Nacional de Investigación y Tecnología Agraria y Alimentaria, O.A., M.P. - INIA, Valdeolmos, Spain
+
+54 Departamento de Microbiología, Hospital Clínic de Barcelona
+
+55 CINBIO, Universidade de Vigo, Vigo, Spain
+
+56 Department of Biochemistry, Genetics, and Immunology, Universidade de Vigo, Vigo, Spain
+
+57 Galicia Sur Health Research Institute (IIS Galicia Sur), SERGAS-UVIGO, Spain
+
+58 Hospital General Universitario de Castellón, Castellón, Spain
+
+59 IdISSC/Hospital Clínico San Carlos, Madrid, Spain
+
+60 Hospital Marqués de Valdecilla - IDIVAL, Santander, Spain
+
+61 Servicio de Microbiología, Hospital Universitario Son Espases, Palma de Mallorca, Spain
+
+62 Instituto de Investigación Sanitaria de las Islas Baleares, Spain
+
+63 Servicio de Microbiología, Hospital Universitario de Álava, Osakidetza-Servicio Vasco de Salud, Vitoria-Gasteiz (Álava), Spain
+
+64 Servicio Microbiología, Departamento de Salud de Elche-Hospital General, Elche, Alicante, Spain
+
+65 Departamento de Producción Vegetal y Microbiología. Universidad Miguel Hernández. Elche
+
+66 Fundación para el Fomento de la Investigación Sanitaria y Biomédica de la Comunitat Valenciana: Elche, Alicante, Spain
+
+67 Biodonostia; Osakidetza, Hospital Universitario Donostia, Servicio de Microbiología, San Sebastián, Spain
+
+68 Hospital Universitario y Politécnico La Fe, Servicio de Microbiología, Valencia, Spain
+
+69 Servicio de Microbiología. Hospital Universitario Virgen de las Nieves, Granada, Spain
+
+70 Hospital Universitario Virgen de las Nieves, Instituto de Investigación Biosanitaria ibs, Granada, Spain
+
+71 Hospital Universitario de Gran Canaria Dr. Negrin, Las Palmas de Gran Canaria, Spain
+
+72 Microbiology Service, Hospital Clínico Universitario, INCLIVA Research Institute, Valencia, Spain
+
+73 Laboratorio de Microbiología. Hospital General Universitario de Elda. Elda, Alicante, Spain
+
+74 Servicio de Microbiología. Consorcio Hospital General Universitario de Valencia, Valencia, Spain
+
+75 Laboratorio Biología Molecular, Área de Diagnóstico Biológico, Hospital Universitario La Ribera, Alzira, Valencia, Spain
+
+76 Servicio de Microbiologia, Hospital Regional Universitario de Málaga, Málaga, Spain
+
+77 Instituto Nacional de Investigación y Tecnología Agraria y Alimentaria, O.A., M.P. - INIA, Madrid, Spain
+
+78 Hospital General Universitario de Albacete, Spain
+
+79 Hospital Universitario San Cecilio, Granada, Spain
+
+80 Animal Health Department. Universidad de León, León, Spain
+
+81 Research Group on Gene-Environment Interactions and Health. Institute of Biomedicine (IBIOMED). Universidad de León, León, Spain
+
+82 Servicio de Microbiología, Hospital Arnau de Vilanova, Valencia, Spain
+
+83 Hospital Clínico Universitario de Santiago de Compostela, Santiago de Compostela, Spain
+
+84 Biomedical Research Institute of Barcelona (IIBB), Spanish National Research Council  (CSIC), Barcelona, Spain
+
+85 Servicio de Enfermedades Infecciosas, Hospital Clínic de Barcelona, Barcelona, Spain
+
+86 Biomedical Research Institute Sant Pau (IIB Sant Pau), Barcelona, Spain
+
+87 . Institut of Global Health of Barcelona (ISGlobal), Barcelona, Spain
+
+88 Servicio de Microbiología, Hospital Clínico Universitario Virgen de la Arrixaca, Departamento de Genética y Microbiología, Universidad de Murcia, Carretera Madrid-Cartagena sn,30120- El Palmar, Murcia (Spain)
+
+89 Hospital Universitario 12 de Octubre, Madrid (Spain)
+
+90 Hospital Universitario La Paz, Madrid (Spain)
+
+91 Hospital Universitario Ramón y Cajal, Madrid (Spain)
+
+92 Laboratorio de Microbiología, Hospital Marina Baixa. Villajoyosa (Spain)
+
