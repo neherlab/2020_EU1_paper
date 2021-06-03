@@ -226,7 +226,7 @@ def get_country_colors(selected_countries):
 def make_pie_tree(cluster, node_counts, fname):
 
     for node in cluster.get_terminals(order='postorder'):
-            cluster.collapse(target=node)
+        cluster.collapse(target=node)
     cluster.ladderize()
 
     # Calculate the Y plotting values for each node
@@ -332,7 +332,7 @@ def make_pie_tree(cluster, node_counts, fname):
 
 def plot_introduction_statistics(node_countries, suffix):
     country_colors = get_country_colors(selected_countries)
-    plt.figure()
+    plt.figure(figsize=(6.5,4))
     for country in selected_countries:
         res = resample_country(node_countries, country)
         plt.plot(res['n_seqs'], res['expected_intros'], label=f"{country} (n={int(res['total_sequences']):d})", lw=2,
@@ -346,7 +346,7 @@ def plot_introduction_statistics(node_countries, suffix):
     plt.legend()
     plt.savefig(figure_path + f"resampling_introductions_{suffix}.{fmt}")
 
-    plt.figure()
+    plt.figure(figsize=(6.5,4))
     for country in selected_countries:
         counts = sorted([node_countries[n].get(country, 0) for n in node_countries if node_countries[n].get(country, 0)], reverse=True)
 
@@ -354,11 +354,13 @@ def plot_introduction_statistics(node_countries, suffix):
             ls=country_colors[country]['ls'] if country in country_colors else "-",
             c=country_colors[country]['c'] if country in country_colors else "#CCCCCC")
 
-    plt.xlabel('cluster rank')
-    plt.ylabel('cluster size')
+    plt.xlabel('cluster rank', fontsize=16)
+    plt.ylabel('cluster size', fontsize=16)
+    plt.tick_params(labelsize=13)
     plt.yscale('log')
     plt.xscale('log')
-    plt.legend()
+    plt.legend(ncol=2)
+    plt.tight_layout()
     plt.savefig(figure_path + f"cluster_sizes_{suffix}.{fmt}")
 
 
@@ -366,7 +368,7 @@ if __name__=="__main__":
 
     metadatafile = "gisaid_data/metadata_2021-01-20.tsv"
     figure_path = "./figures/"
-    untilNov=True
+    untilNov=False
 
     #For November 30 data
     if untilNov:
